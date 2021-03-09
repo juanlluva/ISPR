@@ -1,22 +1,23 @@
 # Blacklist everything
-/*
+lab*/*
+sources
 
 # whitelist the necessary files and folders, this gets everything from inside them too
 !.gitignore
 !.gitmodules
 !README.md
-!./lab*/*.xpr
-!./lab*/.srcs/
-!./lab*/*.sdk
+!**/*.xpr
+!**/.srcs/
+!**/*.sdk
 
 #Digilent Added ignore rules for Vivado projects
 
 # sdk exclusions
-./lab*/*.sdk/.metadata
-./lab*/*.sdk/RemoteSystemsTempFiles
-./lab*/*.sdk/**/*Debug/*
-./lab*/*.sdk/webtalk
-./lab*/*.sdk/*.log
+**/*.sdk/.metadata
+**/*.sdk/RemoteSystemsTempFiles
+**/*.sdk/**/*Debug/*
+**/*.sdk/webtalk
+**/*.sdk/*.log
 # ignore everything in the hw_platform
 #sdk/*hw_platform*/*
 # except
@@ -24,13 +25,13 @@
 #!sdk/*hw_platform*/.*project
 
 # Make sure we keep only xci files in ip src subfolder
-./lab*/src/ip/*/**
-!./lab*/src/ip/*/*.xci
-!./lab*/src/ip/*/*.prj
+**/src/ip/*/**
+!**/src/ip/*/*.xci
+!**/src/ip/*/*.prj
 # Do not ignore anything in src/others
-!./lab*/src/others/*
+!**/src/others/*
 # Do not ignore block diagram files
-!./lab*/src/bd/**
+!**/src/bd/**
 
 
 # ignore everything in project folder
