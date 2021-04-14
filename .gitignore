@@ -1,6 +1,8 @@
 # Blacklist everything
 lab*/*
+sdu/*
 sources
+hls
 
 # whitelist the necessary files and folders, this gets everything from inside them too
 !.gitignore
